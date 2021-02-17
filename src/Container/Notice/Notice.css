@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;800;900&display=swap");
+
+.noticeheading {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  font-family: Montserrat;
+  padding: 4rem 0rem;
+}
+
+.noticesection {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+}

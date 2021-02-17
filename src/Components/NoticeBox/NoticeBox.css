@@ -1,0 +1,29 @@
+.noticebox {
+  height: 9rem;
+  width: 15rem;
+  border: 3px solid black;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.date {
+  height: 2rem;
+  width: 7rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  text-align: left;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  margin: 0%;
+}
+
+.info {
+  position: absolute;
+  top: 4rem;
+  width: inherit;
+  margin: 0%;
+  padding: 0 1rem;
+}
