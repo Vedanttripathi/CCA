@@ -5,33 +5,32 @@ import image2 from '../Assets/Images/img2.jpg';
 import image3 from '../Assets/Images/img3.jpg';
 import image4 from '../Assets/Images/img4.jpg';
 import image5 from '../Assets/Images/img5.jpg';
-import CarouselTxt from '../Components/CarouselTxt/CarouselTxt';
 
 
 const Content = () => (
     <div className='slide-frame'>
                 <div  className='slider'>
-                    <img className='image' src={image1} />
-                    <img className='image' src={image2} />
-                    <img className='image' src={image3} />
-                    <img className='image' src={image4} />
-                    <img className='image' src={image5} />
+                    <div className='image'><img src={image1} /></div>
+                    <div className='image'><img src={image2} /></div>
+                    <div className='image'><img src={image3} /></div>
+                    <div className='image'><img src={image4} /></div>
+                    <div className='image'><img src={image5} /></div>
                 </div>
                     <div className = 'slidemove'>
                         <div className='slidetxt'>
-                            Manager Sir
+                            <p>Manager Sir</p>
                         </div>
                         <div className='slidetxt'>
-                            Manager Sir
+                            <p>Manager Sir</p>
                         </div>
                         <div className='slidetxt'>
-                            Manager Sir
+                            <p>Manager Sir</p>
                         </div>
                         <div className='slidetxt'>
-                            Manager Sir
+                            <p>Manager Sir</p>
                         </div>
                         <div className='slidetxt'>
-                            Manager Sir
+                            <p>Manager Sir</p>
                         </div>
                     </div>
             </div>

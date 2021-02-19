@@ -16,31 +16,31 @@
 .slidemove {
   grid-area: slidetxt;
   display: flex;
-  justify-content: center;
-  place-items: center;
-  width: 50vw;
-  height: 100%;
+  width: auto;
+  height: calc(100vh - 3.5rem);
   overflow: hidden;
 }
 
 .slidetxt {
-  width: 100%;
-  height: 100vh;
+  min-width: 50vw;
+  height: inherit;
   position: relative;
-  top: 0;
-  left: 0;
-  margin: auto;
+  display: grid;
+  place-content: center;
+  animation: 25s slide infinite;
 }
 
-/* .slidetxt {
-  animation: 25s slide infinite;
-} */
-
 .image {
-  height: 100%;
-  width: 50vw;
+  height: 100vh;
+  min-width: 50vw;
   position: relative;
   animation: 25s slide infinite;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @keyframes slide {
@@ -48,27 +48,27 @@
     left: 0;
   }
   20% {
-    left: -45vw;
+    left: -100%;
   }
   25% {
-    left: -45vw;
+    left: -100%;
   }
   45% {
-    left: -90vw;
+    left: -200%;
   }
   50% {
-    left: -90vw;
+    left: -200%;
   }
   70% {
-    left: -135vw;
+    left: -300%;
   }
   75% {
-    left: -135vw;
+    left: -300%;
   }
   95% {
-    left: -180vw;
+    left: -400%;
   }
   100% {
-    left: -180vw;
+    left: -400%;
   }
 }

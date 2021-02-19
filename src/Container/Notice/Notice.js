@@ -3,7 +3,7 @@ import NoticeBox from '../../Components/NoticeBox/NoticeBox';
 import './Notice.css';
 
 const Notice = () => (
-    <div>
+    <div className="notice">
         <div className='noticeheading'>
             <h1>Notice</h1>
         </div>

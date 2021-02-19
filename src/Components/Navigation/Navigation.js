@@ -10,10 +10,15 @@ class Navigation extends Component
         return (
             <div className='topbar'>
                 <Logo />
+                <h1 className='name'>CHILDREN COLLEGE</h1>
                 <div className='btns'>
                 <Button txt = 'Login'/>
                 <Button txt = 'Signup'/>
                 <Button txt = 'Academics'/>
+                <Button txt = 'Admissions'/>
+                <Button txt = 'About'/>
+                <Button txt = 'Contact'/>
+
                 </div>
             </div>
         );

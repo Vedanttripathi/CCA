@@ -1,0 +1,32 @@
+.intro {
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+}
+
+.left-intro {
+  grid-area: left;
+  height: inherit;
+  width: 50vw;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  padding: 5rem;
+  font-size: 3rem;
+}
+
+.right-intro {
+  grid-area: right;
+  height: inherit;
+  width: 50vw;
+  display: grid;
+  place-items: center;
+}
+
+span {
+  color: #ed780d;
+}

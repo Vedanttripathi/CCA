@@ -1,8 +1,0 @@
-.txtcard {
-  height: calc(100vh - 3.5rem);
-  width: 50vw;
-  display: grid;
-  place-items: center;
-  font-size: 4rem;
-  font-weight: bold;
-}

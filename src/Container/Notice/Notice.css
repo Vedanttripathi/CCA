@@ -8,7 +8,8 @@
   font-weight: 900;
   font-size: 2rem;
   font-family: Montserrat;
-  padding: 4rem 0rem;
+  padding-top: 1rem;
+  margin: 0%;
 }
 
 .noticesection {
@@ -17,4 +18,10 @@
   display: flex;
   justify-content: space-around;
   place-items: center;
+  padding-bottom: 3rem;
+}
+
+.notice {
+  background-color: aliceblue;
+  margin: 0%;
 }
