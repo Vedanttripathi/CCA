@@ -1,0 +1,40 @@
+.locations {
+  height: 70vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas:
+    "heading heading"
+    "map list";
+}
+
+.locations-heading {
+  grid-area: heading;
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-family: "Open Sans";
+}
+
+.map {
+  grid-area: map;
+  display: grid;
+  place-content: center;
+}
+
+.fake-map {
+  height: 15rem;
+  width: 30rem;
+  background-color: #c4c4c4;
+}
+
+.locations-list {
+  grid-area: list;
+  display: grid;
+  place-content: left;
+}
+
+.locations-list ul {
+  margin: auto 2rem;
+  font-weight: bold;
+}

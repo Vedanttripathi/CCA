@@ -1,0 +1,19 @@
+.impdates {
+  display: flex;
+  justify-content: space-around;
+}
+
+.date {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.date-heading span {
+  color: red;
+}
+
+.date-heading {
+  padding: 3rem;
+  font-size: 3rem;
+}

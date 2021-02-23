@@ -1,0 +1,29 @@
+.contact {
+  height: 50vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 3.5fr 6.5fr;
+  grid-template-areas: "contact-left contact-right";
+}
+
+.contact-left {
+  grid-area: contact-left;
+  display: grid;
+  place-content: center;
+}
+
+.underline {
+  height: 0.2rem;
+  width: 15rem;
+  background-color: white;
+}
+
+.details-section {
+  padding: 2rem 0rem;
+}
+
+.details {
+  font-weight: bold;
+}

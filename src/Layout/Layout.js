@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import Aux from '../hoc/Aux';
 import Navigation from '../Components/Navigation/Navigation';
 import Content from '../Container/Content';
-import Notice from '../Container/Notice/Notice';
 import Intro from '../Container/Intro/Intro';
-import MenuGrid from '../Container/MenuGrid/MenuGrid';
 import HighLights from '../Container/Highlights/Highlights';
+import ImpDates from '../Container/Important_Dates/ImpDates';
+import Menu from '../Container/Menu/Menu';
+import Locations from '../Container/Locations/Locations';
+import Footer from '../Container/Footer/Footer';
 
 class Layout extends Component {
 render () {
@@ -13,11 +15,12 @@ render () {
         <Aux>
             <Navigation />
             <Content />
-            <Notice />
             <Intro />
-            <MenuGrid />
+            <ImpDates />
+            <Menu />
             <HighLights />
-            <div>Footer</div>
+            <Locations />
+            <Footer />
         </Aux>
     );
 }

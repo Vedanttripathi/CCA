@@ -1,0 +1,53 @@
+.menubox {
+  height: 10rem;
+  width: 30rem;
+  border: 3px solid black;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-template-rows: 1fr 9fr;
+  grid-template-areas:
+    "heading heading"
+    "desc arrow";
+}
+
+.menu-heading {
+  grid-area: heading;
+}
+
+.menu-heading h1 {
+  /* padding: 2rem; */
+  padding: 1rem 0rem 1rem 1rem;
+  margin: 0%;
+}
+
+.menu-desc {
+  grid-area: desc;
+  text-align: left;
+}
+
+.menu-desc p {
+  margin: 0% 1rem;
+}
+.arrow-section {
+  grid-area: arrow;
+  display: grid;
+  place-content: center;
+}
+
+.arrow-icon {
+  border: 3px solid black;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.arrow {
+  height: 0.2rem;
+  width: 2rem;
+  background-color: black;
+}

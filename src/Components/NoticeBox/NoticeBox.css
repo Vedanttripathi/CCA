@@ -1,29 +1,26 @@
 .noticebox {
-  height: 11rem;
-  width: 15rem;
+  height: 38rem;
+  width: 25rem;
   border: 3px solid black;
   box-sizing: border-box;
   overflow: hidden;
-  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas:
+    "heading"
+    "desc";
+  padding: 2rem;
+  margin: 2rem auto;
 }
 
-.date {
-  height: 2rem;
-  width: 7rem;
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
+.notice-heading {
+  grid-area: heading;
+  text-align: center;
+}
+
+.notice-desc {
+  grid-area: desc;
+  overflow: scroll;
   text-align: left;
-  justify-content: center;
-  background-color: black;
-  color: white;
-  margin: 0%;
-}
-
-.info {
-  position: absolute;
-  top: 4rem;
-  width: inherit;
-  margin: 0%;
-  padding: 0 1rem;
+  padding: 1rem;
 }

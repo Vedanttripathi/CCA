@@ -18,19 +18,19 @@ const Content = () => (
                 </div>
                     <div className = 'slidemove'>
                         <div className='slidetxt'>
-                            <p>Manager Sir</p>
+                            <p>Text 1</p>
                         </div>
                         <div className='slidetxt'>
-                            <p>Manager Sir</p>
+                            <p>Text 2</p>
                         </div>
                         <div className='slidetxt'>
-                            <p>Manager Sir</p>
+                            <p>Text 3</p>
                         </div>
                         <div className='slidetxt'>
-                            <p>Manager Sir</p>
+                            <p>Text 4</p>
                         </div>
                         <div className='slidetxt'>
-                            <p>Manager Sir</p>
+                            <p>Text 5</p>
                         </div>
                     </div>
             </div>

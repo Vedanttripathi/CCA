@@ -3,8 +3,12 @@ import './NoticeBox.css';
 
 const NoticeBox = (props) => (
     <div className='noticebox'>
-        <p className='date'>{props.date}</p>
-        <p className='info'>{props.info}</p>
+        <div className='notice-heading'>
+            <h1>Notice</h1>
+        </div>
+        <div className='notice-desc'>
+            <p>{props.desc}</p>
+        </div>
     </div>
 );
 
