@@ -1,0 +1,49 @@
+.admission {
+  height: 100%;
+  width: 100vw;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.input {
+  border: 2px solid black;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin: 2rem;
+  padding: 0.3rem;
+}
+
+.form {
+  display: grid;
+  place-content: center;
+}
+
+.address {
+  border: 2px solid black;
+  width: 35rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin: 2rem;
+  padding: 0.3rem;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: space-around;
+}
+
+.btns {
+  background-color: #065157;
+  width: 8rem;
+  height: 0.5rem;
+  color: white;
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+  border-radius: 5px;
+  margin: 2rem;
+}

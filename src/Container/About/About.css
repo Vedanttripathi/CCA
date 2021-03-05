@@ -1,0 +1,18 @@
+.about {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.about-heading {
+  padding: 2rem;
+  max-width: 60%;
+  font-size: 3rem;
+}
+
+.about-desc {
+  padding: 2rem;
+  font-size: 1.3rem;
+  color: gray;
+}

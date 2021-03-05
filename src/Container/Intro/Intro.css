@@ -59,3 +59,9 @@
   display: grid;
   place-content: center;
 }
+
+@media only screen and (min-width: 500px) {
+  body {
+    width: 100%;
+  }
+}

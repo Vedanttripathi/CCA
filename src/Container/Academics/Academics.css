@@ -1,0 +1,52 @@
+.academics {
+  height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.academics-heading {
+  padding: 2rem;
+  max-width: 60%;
+  font-size: 3rem;
+}
+
+.academics-desc {
+  padding: 2rem;
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.table-section {
+  width: 100%;
+  display: grid;
+  box-sizing: border-box;
+  place-content: center;
+  padding: 5rem;
+}
+
+.table {
+  border: 2px solid black;
+  text-align: center;
+  border-collapse: collapse;
+  min-width: 300px;
+}
+
+.table-heading-one th {
+  text-align: center;
+  background-color: #2f7cc2;
+  color: white;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.table th {
+  border: 2px solid black;
+  padding: 0.3rem;
+}
+
+.table td {
+  padding: 0.3rem;
+  /* border-bottom: 2px solid black;
+  border-right: 2px solid black; */
+}

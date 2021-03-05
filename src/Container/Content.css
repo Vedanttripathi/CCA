@@ -72,3 +72,9 @@
     left: -400%;
   }
 }
+
+@media (max-width: 600px) {
+  .slide-frame {
+    display: none;
+  }
+}
