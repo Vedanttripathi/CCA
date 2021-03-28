@@ -27,3 +27,30 @@
 .details {
   font-weight: bold;
 }
+
+@media (max-width: 576px) {
+  .contact {
+    height: 100%;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+      "contact-left"
+      "contact-right";
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  .contact {
+    height: 100%;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 3.5fr 6.5fr;
+    grid-template-areas: "contact-left contact-right";
+  }
+}

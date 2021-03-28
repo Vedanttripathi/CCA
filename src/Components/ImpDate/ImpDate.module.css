@@ -4,6 +4,7 @@
   border: 3px solid black;
   position: relative;
   overflow: hidden;
+  margin: 5px;
 }
 
 .imagebox {
@@ -37,4 +38,11 @@
   padding: 2rem;
   margin: 0%;
   text-align: left;
+}
+
+@media (min-width: 576px) and (max-width: 1000px) {
+  .box {
+    height: 20rem;
+    width: 12rem;
+  }
 }

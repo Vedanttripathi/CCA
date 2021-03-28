@@ -16,6 +16,11 @@
   padding: 1rem;
 }
 
+.hamburger {
+  color: white;
+  display: none;
+}
+
 .name {
   color: white;
   font-size: 1rem;
@@ -24,5 +29,45 @@
 @media (max-width: 576px) {
   .topbar {
     min-width: 100vw;
+  }
+
+  .name {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+
+  .sidedrawer-div {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .btns {
+    display: none;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  .topbar {
+    min-width: 100vw;
+  }
+
+  .name {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+
+  .sidedrawer-div {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .btns {
+    display: none;
   }
 }

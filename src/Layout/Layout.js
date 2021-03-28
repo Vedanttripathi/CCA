@@ -10,6 +10,8 @@ import Locations from '../Container/Locations/Locations';
 
 
 class Layout extends Component {
+    
+
 render () {
     return (
         <div className='layout'>

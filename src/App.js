@@ -10,12 +10,24 @@ import Footer from './Container/Footer/Footer';
 import Academics from './Container/Academics/Academics';
 import Login from './Container/Login/Login';
 import Admissions from './Container/Admissions/Admissions';
+import SideDrawer from './Components/Navigation/SideDrawer';
 
 class App extends Component {
+
+  state = {
+    showDrawer : false
+};
+
+drawHandler = () => {
+    const curr = this.state.showDrawer;
+    this.setState({ showDrawer : !curr });
+}
+
   render () {
     return (
       <Aux>
-        <Navigation />
+        <Navigation drawHandler = {this.drawHandler} showDrawer = {this.state.showDrawer}/>
+        <div className='sidedrawer-div' style={{'display' : this.state.showDrawer ? 'block' : 'none'}}><SideDrawer /></div>
         <Route path="/" exact component={Layout} />
         <Route path="/gallery" exact component={Gallery} />
         <Route path="/about" exact component={About} />

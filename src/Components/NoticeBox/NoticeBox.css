@@ -24,3 +24,17 @@
   text-align: left;
   padding: 1rem;
 }
+
+@media (max-width: 576px) {
+  .noticebox {
+    height: 35rem;
+    width: calc(100vw - 15px);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1000px) {
+  .noticebox {
+    height: 28rem;
+    width: calc(50vw - 10px);
+  }
+}

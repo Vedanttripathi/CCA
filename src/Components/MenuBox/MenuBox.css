@@ -44,10 +44,27 @@
   border-radius: 50%;
   display: grid;
   place-content: center;
+  color: black;
 }
 
 .arrow {
   height: 0.2rem;
   width: 2rem;
   background-color: black;
+}
+
+@media (max-width: 576px) {
+  .menubox {
+    height: 8rem;
+    width: calc(100vw - 10px);
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1000px) {
+  .menubox {
+    height: 8rem;
+    width: calc(50vw - 10px);
+    margin: 1rem;
+  }
 }

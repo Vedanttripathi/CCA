@@ -19,12 +19,13 @@
 .intro-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "left right";
+  grid-template-areas: "left-into right-intro";
   height: 100%;
   padding: 3rem;
 }
 
 .intro-left {
+  grid-area: left-into;
   color: white;
   display: grid;
   place-content: start;
@@ -39,6 +40,7 @@
 }
 
 .intro-right {
+  grid-area: right-intro;
   text-align: center;
   color: white;
   display: grid;
@@ -60,8 +62,92 @@
   place-content: center;
 }
 
-@media only screen and (min-width: 500px) {
-  body {
-    width: 100%;
+@media (max-width: 576px) {
+  .intro-main-container {
+    height: 100%;
+  }
+
+  .intro-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .intro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas:
+      "left-into"
+      "right-intro";
+    /* overflow: scroll; */
+    /* place-content: center; */
+  }
+
+  .intro-left {
+    grid-area: left-into;
+    display: grid;
+    place-content: center;
+    width: inherit;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .intro-right {
+    grid-area: right-intro;
+    text-align: justify;
+    color: white;
+    display: grid;
+    place-content: start;
+  }
+
+  .intro-left h1 {
+    text-align: center;
+    padding: 0rem;
+    font-size: 2rem;
+  }
+
+  .intro-right p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem 0rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .intro-main-container {
+    height: 100%;
+  }
+
+  .intro-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .intro-left {
+    display: grid;
+    place-content: center;
+    width: inherit;
+    height: 100%;
+    overflow: auto;
+    padding: 1rem;
+  }
+
+  .intro-right {
+    text-align: justify;
+    color: white;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+  }
+
+  .intro-left h1 {
+    text-align: center;
+    padding: 0rem;
+    font-size: 2rem;
+  }
+
+  .intro-right p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem 0rem;
   }
 }

@@ -4,9 +4,13 @@ import Button from '../Buttons/Button';
 import './Navigation.css';
 import Logo from '../Logo/Logo';
 import {Link} from 'react-router-dom';
+import SideDrawer from './SideDrawer';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  
 class Navigation extends Component
 {
+    
     render () {
         return (
             <div className='topbar'>
@@ -26,6 +30,8 @@ class Navigation extends Component
                 <Link to='/contact'><Button txt = 'Contact'/></Link>
 
                 </div>
+                <div className='hamburger' style={{'color' : this.props.showDrawer ? 'black' : 'white',}} onClick={this.drawHandler}><FontAwesomeIcon icon={faBars} size='2x'/></div>
+                
             </div>
         );
     }

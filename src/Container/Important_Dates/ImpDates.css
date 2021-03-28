@@ -17,3 +17,20 @@
   padding: 3rem;
   font-size: 3rem;
 }
+
+@media (max-width: 576px) {
+  .date {
+    height: 100%;
+  }
+
+  .impdates {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  .date {
+    height: 100%;
+  }
+}
