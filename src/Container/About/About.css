@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   box-sizing: border-box;
   padding: 2rem;
@@ -15,4 +15,17 @@
   padding: 2rem;
   font-size: 1.3rem;
   color: gray;
+}
+
+@media (max-width: 576px) {
+  .about-heading {
+    max-width: 100%;
+    font-size: 2rem;
+    padding: 2rem 0rem;
+  }
+
+  .about-desc {
+    padding: 0rem;
+    text-align: justify;
+  }
 }

@@ -50,3 +50,16 @@
   /* border-bottom: 2px solid black;
   border-right: 2px solid black; */
 }
+
+@media (max-width: 576px) {
+  .academics-heading {
+    max-width: 100%;
+    font-size: 2rem;
+    padding: 2rem 0rem;
+  }
+
+  .academics-desc {
+    padding: 0rem;
+    text-align: justify;
+  }
+}
