@@ -11,6 +11,7 @@ import Academics from './Container/Academics/Academics';
 import Login from './Container/Login/Login';
 import Admissions from './Container/Admissions/Admissions';
 import SideDrawer from './Components/Navigation/SideDrawer';
+import Header from './Components/Header/Header';
 
 class App extends Component {
 
@@ -26,6 +27,7 @@ drawHandler = () => {
   render () {
     return (
       <Aux>
+        <Header />
         <Navigation drawHandler = {this.drawHandler} showDrawer = {this.state.showDrawer}/>
         <div className='sidedrawer-div' style={{'display' : this.state.showDrawer ? 'block' : 'none'}}><SideDrawer /></div>
         <Route path="/" exact component={Layout} />

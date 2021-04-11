@@ -5,6 +5,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "leftmenu rightmenu";
   overflow: hidden;
+  background-color: #e0cba8;
 }
 
 .menu-left {

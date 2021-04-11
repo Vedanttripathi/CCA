@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
 .button {
-  height: 3.4rem;
+  height: inherit;
   width: auto;
   background: none;
   color: white;
   font-family: "Open Sans";
   display: grid;
-  place-items: center;
-  margin: 1rem;
+  place-content: center;
+  /* margin: 1rem; */
   /* border: 1px solid white; */
-  padding: 0.25rem;
+  padding: 1rem;
   font-weight: bold;
   text-decoration: none;
   /* box-sizing: border-box; */
@@ -22,6 +22,7 @@ a {
 
 .button:hover {
   cursor: pointer;
-  border-bottom: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.2);
+  /* border-bottom: 1px solid white; */
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  color: rgb(38, 98, 175);
 }
